@@ -9,7 +9,7 @@ import { ProductsService } from 'src/app/services/products.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-    public term : string| undefined;
+    public term : string | undefined;
     public products: Product[] =[];
 
     constructor(router : Router, route : ActivatedRoute, private productsService : ProductsService) { 

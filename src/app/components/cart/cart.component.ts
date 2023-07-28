@@ -12,7 +12,7 @@ import { UsersService } from 'src/app/services/users.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-[x: string]: any;
+    [x: string]: any;
     caretUp = faCaretUp;
     caretDown = faCaretDown;
 
