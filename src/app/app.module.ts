@@ -12,7 +12,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { CartComponent } from './components/cart/cart.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,14 +23,15 @@ import { WelcomePageComponent } from './components/welcome-page/welcome-page.com
     ProductListComponent,
     RegisterComponent,
     UserDetailComponent,
-    WelcomePageComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

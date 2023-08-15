@@ -12,6 +12,10 @@ export class LoginComponent implements OnInit {
     public username!: string
     public password! : string
     public error! : string
+    title = 'Vitrine';
+    public navigate : string | undefined
+    public isTokenThere! : boolean
+    term: any;
 
     constructor(private usersService : UsersService, private router : Router) { }
 
@@ -32,6 +36,11 @@ export class LoginComponent implements OnInit {
                 console.log(error);
                 this.error = "Invalid login credentials"
             })
-        
+    }
+    
+  
+    
+    search () {
+        this.router.navigate(["/shop", this.navigate]).then(() => window.location.reload())
     }
 }

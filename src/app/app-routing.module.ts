@@ -6,9 +6,10 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: '/login', pathMatch: 'full'},
+    {path: '', redirectTo: '/welcome', pathMatch: 'full'},
     {path: 'register', component: RegisterComponent},
     {path: 'login', component: LoginComponent},
     {path: 'shop', component: ProductListComponent},
