@@ -1,0 +1,8 @@
+.product-img-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../../assets/static/images/item_logo.png");
+    width: 100%;
+    height: 250px;
+}
