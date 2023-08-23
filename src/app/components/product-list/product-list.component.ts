@@ -17,15 +17,28 @@ export class ProductListComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.productsService.getProducts().subscribe((products : Product[]) => {
-            this.products = products
+        this.productsService.getProducts().subscribe(
+          (products: Product[]) => {
+            this.products = products.map(product => ({
+              ...product,
+              imageUrl: product.image || "../../../assets/static/images/question_mark.png"
+            }));
+          },
+          (error: ErrorEvent) => {
+            console.error("Error fetching products:", error);
+          }
+        );
 
-            for (let product of this.products) {
-                product.imageUrl = product.image ? 'data:image/jpeg;base64,' + product.image :
-                "../../../assets/static/images/product-placeholder.png";
+    // ngOnInit(): void {
+    //     this.productsService.getProducts().subscribe((products : Product[]) => {
+    //         this.products = products
+
+    //         for (let product of this.products) {
+    //             product.imageUrl = product.image || "../../../assets/static/images/question_mark.png";
                 
-            }
-        }, (error: ErrorEvent) => {
-        })
-    }
+    //         }
+    //     }, (error: ErrorEvent) => {
+    //     })
+    // }
+}
 }

@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../environments/environment';
 import { Product } from '../models/Product';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -18,4 +17,5 @@ export class ProductsService {
     getProduct (id : string) : Observable<Product> {
         return this.http.get<Product>(`${environment.API_URL}/api/products/${id}`);
     }
+
 }
