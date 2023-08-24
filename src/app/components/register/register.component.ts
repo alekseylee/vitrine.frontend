@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Subject } from 'rxjs';
 import { Token } from 'src/app/models/Token';
 import { User } from 'src/app/models/User';
 import { UsersService } from 'src/app/services/users.service';
@@ -29,6 +30,7 @@ export class RegisterComponent implements OnInit {
             this.router.navigateByUrl('/account')
         }
     }
+    private missionAnnounceSource = new Subject<string>;
 
     register () {
         const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*/
@@ -44,9 +46,9 @@ export class RegisterComponent implements OnInit {
             this.error = "Passwords do not match"
             return
         }
-
+        
         this.usersService.register(
-            this.username, this.password, this.email, this.email, this.address, this.phone).subscribe((token : Token) => {
+            this.username, this.password, this.email, this.name, this.address, this.phone).subscribe((token : Token) => {
                 localStorage.setItem('token', token.token);
                 this.router.navigateByUrl('/account').then(() => window.location.reload())
             }, (error : ErrorEvent) => {

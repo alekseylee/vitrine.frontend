@@ -1,4 +1,33 @@
 
+<div class="container">
+  <div class="card">
+    <img src="../../../assets/vitrine_new.png" alt="Vitrine app" class="vitrine">
+    <p><span><a href="shop">Home</a></span></p>
+    <p><span><a href="login">Login</a></span></p>
+    <p><span><a href="register">Register</a></span></p>
+    <p><span><a href="account">Account</a></span></p>
+    <p><span><a href="cart">Cart</a></span></p>
+    <p><span><a href="welcome">Welcome</a></span></p>
+  </div>
+</div>
+<div><form class="search" (submit)="search()">
+  <input 
+      class="form-control mr-sm-2 bg-transparent text-success" 
+      type="search" 
+      placeholder="Search products" 
+      aria-label="Search"
+      [(ngModel)]="term"
+      name="term">
+      <button class="shadow__btn"type="submit">Search</button>
+</form> 
+</div>
+<router-outlet></router-outlet>
+
+
+
+
+
+
 
 <!-- <div class="card">
   <a href="#" class="socialContainer containerOne">
@@ -33,28 +62,3 @@
   
 </div>
 </div> -->
-
-<div class="container">
- 
-  
-  <div class="card">
-    <img src="../../../assets/vitrine_new.png" alt="Vitrine app" class="vitrine">
-    <p><span><a href="shop">Home</a></span></p>
-    <p><span><a href="login">Login</a></span></p>
-    <p><span><a href="register">Register</a></span></p>
-    <p><span><a href="account">Account</a></span></p>
-    <p><span><a href="cart">Cart</a></span></p>
-  </div>
-</div>
-<div><form class="search" (submit)="search()">
-  <input 
-      class="form-control mr-sm-2 bg-transparent text-success" 
-      type="search" 
-      placeholder="Search products" 
-      aria-label="Search"
-      [(ngModel)]="term"
-      name="term">
-      <button class="shadow__btn"type="submit">Search</button>
-</form> 
-</div>
-<router-outlet></router-outlet>

@@ -14,6 +14,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UsersService } from './services/users.service';
+import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { UsersService } from './services/users.service';
     ProductListComponent,
     RegisterComponent,
     UserDetailComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,
