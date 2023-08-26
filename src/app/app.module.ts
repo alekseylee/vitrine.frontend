@@ -15,6 +15,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UsersService } from './services/users.service';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
     ProductListComponent,
     RegisterComponent,
     UserDetailComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    HeaderComponent,
+    FooterComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
