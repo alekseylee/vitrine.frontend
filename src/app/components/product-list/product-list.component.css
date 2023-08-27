@@ -2,16 +2,30 @@
     text-align: center 5em;
 }
 
+.product-grid {
+    margin-left: 30px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 150px)); */
+    /* grid-template-columns: repeat( 12, minmax(250px, 1fr) ); */
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 10px;
+    justify-items: center;
+    justify-content: center;
+}
+
 .product-img-container {
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
-    height: 300px;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .h1{
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     margin-bottom: 6rem;
 }
@@ -51,10 +65,10 @@
     height: 40px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background: linear-gradient(to right,#000000,#77ffcb,#0a7741,#3f770a,#e2ff77,#0a7737);
     background-size: 250%;
     background-position: left;
-    color: #ffd277;
+    color: #000000;
     position: relative;
     display: flex;
     align-items: center;
@@ -67,7 +81,7 @@
   .Btn::before {
     position: absolute;
     content: "SUBSCRIBE";
-    color: #ffd277;
+    color: #437571;
     display: flex;
     align-items: center;
     justify-content: center;

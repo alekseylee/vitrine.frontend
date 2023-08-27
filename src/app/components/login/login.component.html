@@ -1,27 +1,25 @@
-<div class="main-container">
-<div class="login-container">
-    <h1 class="login-title">Login</h1>
-    <form class="login-form" action="" (submit)="logIn()">
-        <input type="text" placeholder="Username" name="username" id="username" [(ngModel)]="username" />
-        <input type="password" placeholder="Password" name="password" id="password" [(ngModel)]="password" />
-        <input type="submit" value="Log in" />
-        <h4 *ngIf="error" class="login-error">{{error}}</h4>
-    </form>
-</div>
-</div>
+<div class="container">
+  <div class="card">
+      <a class="signIn">Log In</a>
 
-<!-- <div class="login-box">
- 
-    <form>
-      <div class="user-box">
-        <input type="text" placeholder="Username" name="username" id="username" [(ngModel)]="username" />
-        <label>Username</label>
+      <div class="inputBox">
+          <i class="fas fa-user"></i>
+          
+          <input type="text" required="required" id="username" class="username" name="username" 
+              [(ngModel)]="username" />
+          <span class="user">Username</span>
+
+      <div class="inputBox">
+          <i class="fas fa-lock"></i>
+          <input type="password" required="required" id="password" class="password" name="password"
+              [(ngModel)]="password" /><span class="password">Password</span>
       </div>
-      <div class="user-box">
-        <input type="password" placeholder="Password" name="password" id="password" [(ngModel)]="password" />
-        <label>Password</label>
-      </div>
-      <input type="submit" value="Log in" />
-      <h4 *ngIf="error" class="login-error">{{error}}</h4>
-    </form>
-  </div> -->
+
+        <form class="login" action="" (submit)="logIn()">
+            <input type="submit" value="login" class="login" />
+            <h4 *ngIf="error" style="text-align: center;" class="error">{{error}}</h4>
+        </form>
+    </div>
+
+     
+  </div>

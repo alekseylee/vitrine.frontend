@@ -46,7 +46,8 @@
   
   .inputBox span,
   .inputBox1 span {
-    margin-top: 5px;
+    
+    margin-top: -35px;
     position: absolute;
     left: 0;
     transform: translateY(-4px);

@@ -1,15 +1,4 @@
-<p>product-detail works!</p>
 <div class="px-5 py-5">
-    <style>
-        .product-img-container {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url("../../../assets/static/images/vitrine_new.jpg");
-            height: 500px;
-            width: 500px;
-        }
-    </style>
     <div class="d-flex m-5">
         <div 
             class="product-img-container mx-5" 
@@ -19,9 +8,12 @@
         <div 
             *ngIf="product != undefined"
             class="col-6 rounded px-5 pt-5 pb-3" 
-            style="border: 1px solid white;"
         >
-            <h2>{{ product.name }}</h2>
+            <h1>{{ product.name }}</h1>
+            <h5 class="my-4">Description</h5>
+            <p style="text-align: justify; font-size: 14px;">
+                {{ product.description }}
+            </p>
             <p class="text-muted">Added on {{ product.addedOn | date: 'MMM d'}}</p>
             <div class="d-flex mt-5" style="justify-content: space-between; align-items: center;">
                 <h1>${{ product.price.valueOf()| number : '1.2-2' }}</h1>
@@ -33,10 +25,7 @@
                 >Add to cart</button>
                 <button *ngIf="isProductInCart" class="btn btn-secondary" disabled>In cart</button>
             </div>
-            <h5 class="my-4">Description</h5>
-            <p style="text-align: justify; font-size: 14px;">
-                {{ product.description }}
-            </p>
+            
         </div>
         <h1 
             *ngIf="product == undefined"
