@@ -33,7 +33,7 @@ export class UserDetailComponent implements OnInit {
 
         this.usersService.getUserByToken().subscribe((user : User) => {
             this.user = user
-            
+        
             this.name = user.name;
             this.username = user.username;
             this.email = user.email;

@@ -7,10 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend';
+  title = 'Vitrine';
   public navigate : string | undefined
   public isTokenThere : boolean
-term: any;
+  term: any;
 
   constructor(private router: Router) {
       console.log("Token:  " + localStorage.getItem('token'));

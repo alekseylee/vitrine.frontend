@@ -23,39 +23,25 @@ export class ProductDetailComponent implements OnInit {
         private cartItemsService : CartItemsService
     ) { }
 
-    // ngOnInit(): void {
-    //     this.productsService.getProduct(this.route.snapshot.paramMap.get('id')).subscribe((product : Product) => {
-    //         this.product = product
-    //         this.product.imageUrl = product.image ? 'data:image/jpeg;base64,' + product.image :
-    //         "../../../assets/static/images/product-placeholder.png";
-    //     }, (error: ErrorEvent) => {
-    //         console.log(this.product);
-    //     })
+   
     ngOnInit(): void {
       const productId = this.route.snapshot.paramMap.get('id');
       if (productId) {
-        // The productId is not null, call the getProduct() method
         this.productsService.getProduct(productId).subscribe(
           (product: Product) => {
             this.product = product;
-            this.product.imageUrl = product.image
-              ? 'data:image/jpeg;base64,' + product.image
-              : '../../../assets/static/images/product-placeholder.png';
+            this.product.image = product.image || '../../../assets/static/assets/images/question_mark.jpg';
           },
           (error: ErrorEvent) => {
             console.log(this.product);
           }
         );
       } else {
-        // Handle the case when productId is null (optional)
-        // For example, show an error message or redirect to another page
         console.log('Product ID is null.');
       }
-    
         this.usersService.getUserByToken().subscribe((user : User) => {
             this.user = user
             console.log(this.user.id);
-
             this.getCartItem()
         }, (error : ErrorEvent) => {
             console.log(error)
