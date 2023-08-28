@@ -14,6 +14,7 @@ throw new Error('Method not implemented.');
 }
     public term : string| undefined;
     public products: Product[] =[];
+    public isProductInCart! : boolean;
 
     constructor(router : Router, route : ActivatedRoute, private productsService : ProductsService) { 
         this.term = route.snapshot.paramMap.get('term') || ""

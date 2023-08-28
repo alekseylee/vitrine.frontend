@@ -63,7 +63,6 @@
 
 .inputBox input:valid~span,
 .inputBox input:focus~span {
-  
   margin-top: -35px;
   transform: translateX(113px) translateY(-15px);
   font-size: 0.8em;

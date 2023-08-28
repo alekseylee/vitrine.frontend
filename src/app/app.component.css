@@ -9,16 +9,15 @@
 
 .vitrine {
   margin-left: -25px;
-  margin-top: 70px;
-  width: 125px;
-  height: 125px;
+  margin-top: 15px;
+  width: 100px;
+  height: 100px;
 }
 
 
 .card {
-
     width: auto;
-    height: 254px;
+    height: 100px;
     border-radius: 4px;
     background: none;
     display: flex;  
@@ -26,6 +25,10 @@
     padding: .4em;
   }
   
+  .card a {
+    color: #000000;
+    font-size: 13px;
+  }
   .card p {
     height: 100%;
     flex: 1;
@@ -45,17 +48,22 @@
   }
   
   .card p span {
-    min-width: 14em;
-    padding: .5em;
+    background-image: url('../assets/static/images/background long.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 36em;
+    min-height: 1.5em  ;
+    padding: 100px;
     text-align: center;
     transform: rotate(-90deg);
     transition: all .5s;
     text-transform: uppercase;
-    color: #000000;
+    color: #ff0000;
     letter-spacing: .1em;
   }
   
   .card p:hover span {
+    background-size: cover;
     transform: rotate(0);
   }
 

@@ -6,7 +6,7 @@
                 <h6 class="product-title">{{product.name}}</h6>
                 <div class="product-img-container" [style.background-image]="'url(' + product.image + ')'"></div>
                     <h3>${{ product.price.valueOf()| number : '1.2-2' }}</h3>
-                    <a routerLink="/shop/products/{{ product.id }}" class="btn-success">Go</a>
+                    <a routerLink="/shop/products/{{ product.id }}" class="btn-success">More info</a>
                 </div>
             </div>
         </div>

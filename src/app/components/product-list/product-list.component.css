@@ -65,7 +65,7 @@
     height: 40px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(to right,#000000,#77ffcb,#0a7741,#3f770a,#e2ff77,#0a7737);
+    background:rgb(2, 122, 235) ;
     background-size: 250%;
     background-position: left;
     color: #000000;
