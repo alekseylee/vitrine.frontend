@@ -1,27 +1,71 @@
-# Frontend
+#Fullstack Ecommerce Project (Spring Boot and Angular):
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+Welcome to the Vitrine app! This is a comprehensive project that demonstrates the development of an Ecommerce website using the Spring Boot framework for the backend and Angular for the frontend.
 
-## Development server
+#Project Overview:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The project aims to create a fully functional Ecommerce website with features such as user authentication, product catalog, shopping cart, order processing, and more. By combining Spring Boot and Angular, we leverage the strengths of both technologies to build a robust and responsive web application.
 
-## Code scaffolding
+#Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Backend: Spring Boot
 
-## Build
+Frontend: Angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Database: mySQL (You can choose other databases as well)
 
-## Running unit tests
+Authentication: JSON Web Tokens (JWT)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#Features:
 
-## Running end-to-end tests
+User Authentication: Users can sign up, log in, and log out. JWT tokens are used to manage user sessions.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Product Catalog: Display a list of products with details like title, price, and images.
 
-## Further help
+Product Info: Display product information with details such as title, price and images, description,  and the option to add to cart.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Product Search and Filtering: Users can search for products and apply filters to narrow down their search.
+
+Shopping Cart: Users can add products to their shopping cart, update quantities, and remove items.
+
+Checkout and Orders: Users can proceed to checkout, enter shipping details, and place orders.
+
+#Setup Instructions:
+
+##Backend (Spring Boot)
+
+Clone the repository and navigate to the backend directory: https://github.com/alekseylee/vitrine.backend.
+
+Configure the application.properties file with your MySQL database settings.
+
+Run the Spring Boot application using your preferred IDE or the command line: ./mvnw spring-boot:run.
+
+##Frontend (Angular)
+
+Clone the repository and navigate to the frontend directory:https://github.com/alekseylee/vitrine.frontend.
+
+Install the required packages: npm install.
+
+Configure the API endpoint in the environment.ts file.
+
+Run the Angular development server: ###ng serve or ###ng s --o.
+
+#Project Structure
+
+backend: Contains the Spring Boot backend code.
+
+frontend: Contains the Angular frontend code.
+
+#Contributions
+
+Contributions to the project are welcome! If you find any issues or want to add new features, feel free to fork the repository and submit a pull request.
+
+#License
+
+This project is licensed under the MIT License.
+
+#Contact
+
+If you have any questions or need assistance, you can contact me at alexey.li@email.com.
+
+Thank you for your interest in Vitrine App Project! We hope this project helps you learn and explore the capabilities of Spring Boot and Angular in building robust web applications.
