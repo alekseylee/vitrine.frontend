@@ -1,18 +1,14 @@
+<div class="container-list">
     <h1>Our products</h1>
-        <div class="product-grid">
+    <div class="product-grid">
         <div *ngFor="let product of products; let i = index">
             <div class="item-logo"
                 *ngIf="product.name.toLowerCase().includes(term === undefined ? toString() : term.toLowerCase())">
                 <h6 class="product-title">{{product.name}}</h6>
                 <div class="product-img-container" [style.background-image]="'url(' + product.image + ')'"></div>
-                    <h3>${{ product.price.valueOf()| number : '1.2-2' }}</h3>
-                    <a routerLink="/shop/products/{{ product.id }}" class="btn-success">More info</a>
-                </div>
+                <p class="product-price">{{ product.price.valueOf()| number : '1.2-2' }} €</p>
+                <a routerLink="/shop/products/{{ product.id }}" class="btn-success">More info</a>
             </div>
         </div>
-        
-
-
-   
-    
-    
+    </div>
+</div>

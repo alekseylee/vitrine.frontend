@@ -1,9 +1,5 @@
-.main-page-products {
-    text-align: center 5em;
-}
-
 .product-grid {
-    margin-left: 30px;
+    margin: auto;
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(250px, 150px)); */
     /* grid-template-columns: repeat( 12, minmax(250px, 1fr) ); */
@@ -16,94 +12,50 @@
 .product-img-container {
     background-position: center;
     background-repeat:no-repeat;
-    background-size: 100%;
-    width: 250px;
-    height: 350px;
-    display: flex;
+    background-size: 200px;
+    width: 230px;
+    height: 300px;
+    display:grid;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
 }
-
-.h1{
-    margin: auto;
-    text-align: center;
-    margin-bottom: 6rem;
-}
-
-.item-logo {
-    width: 200px;
-}
-
-
-.h3{
-    background-color: #fff1; 
-    justify-content: space-between; 
-    align-items: center;
-}
-.item-logo{
-    width: 300px; 
+.product-price {
+    
+    margin-left: auto !important; /* Adjust the margin to create spacing */
+    font-weight: bold; /* Adding font weight */
+    color: #000000; /* Adjust color as needed */
 }
 
 .h6{
+    margin-left: auto;
     background-color: #fff5; 
     border-radius: 0 10px 0 0;
     
 }
-.product.image{
-    background-color: yellowgreen;
-}
 
 .product-title {
+    
     background-color: #fff5;
     border-radius: 0 10px 0 0;
-    margin: 0;
+    margin: 5px;
+    margin-top: 35px;
     padding: 2px;
+    padding-left: auto;
     font-size: x-large;
 }
 .btn-success {
-    width: 140px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    background:rgb(2, 122, 235) ;
-    background-size: 250%;
-    background-position: left;
-    color: #000000;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition-duration: 1s;
-    overflow: hidden;
+    margin-left: 35%;
+    background-image: url('../../../assets/static/images/background long.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: .1em;
+    border-radius: 50px;
+    border-color: black;
+    border: 1px solid rgb(34, 34, 34); /* Adding a border */
   }
-  
-  .Btn::before {
-    position: absolute;
-    content: "SUBSCRIBE";
-    color: #437571;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 97%;
-    height: 90%;
-    border-radius: 8px;
-    transition-duration: 1s;
-    background-color: rgba(0, 0, 0, 0.842);
-    background-size: 200%;
-  }
-  
-  .Btn:hover {
-    background-position: right;
-    transition-duration: 1s;
-  }
-  
-  .Btn:hover::before {
-    background-position: right;
-    transition-duration: 1s;
-  }
-  
-  .Btn:active {
-    transform: scale(0.95);
-  }
-  
