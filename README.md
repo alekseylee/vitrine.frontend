@@ -12,11 +12,7 @@ Backend: Spring Boot
 
 Frontend: Angular
 
-Database: MySQL (You can choose other databases as well)
-
-IDE backend - IntelliJ
-
-IDE front end - Visual Studio Code
+Database: mySQL (You can choose other databases as well)
 
 Authentication: JSON Web Tokens (JWT)
 
@@ -48,16 +44,11 @@ Run the Spring Boot application using your preferred IDE or the command line: ./
 
 Clone the repository and navigate to the frontend directory:https://github.com/alekseylee/vitrine.frontend.
 
-#### Install the required packages:
+Install the required packages: npm install.
 
-You should install node_modules "**npm install**" in the terminal.
+Configure the API endpoint in the environment.ts file.
 
-Configure the API endpoint in the **environment.ts** file.
-
-Run the Angular development server: **ng serve** or **ng s --o**.
-
-## Versioning
-I used Git for versioning.  
+Run the Angular development server: ###ng serve or ###ng s --o.
 
 #### Project Structure:
 
