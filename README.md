@@ -56,11 +56,13 @@ backend: Contains the Spring Boot backend code.
 
 frontend: Contains the Angular frontend code.
 
-blablabla???
-?
-?
-?
-?
+#### Project Mockup:
+
+Home page: src\assets\static\mockup\home-page.jpg
+Login page: src\assets\static\mockup\login-page.jpg
+Signup page: src\assets\static\mockup\signup-page.jpg
+Account page: src\assets\static\mockup\account-page.jpg
+Account edit page: src\assets\static\mockup\account-edit-page.jpg
 
 #### Contributions
 
