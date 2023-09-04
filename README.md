@@ -57,6 +57,11 @@ backend: Contains the Spring Boot backend code.
 frontend: Contains the Angular frontend code.
 
 #### Project Mockup:
+[<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/home-page.jpg?raw=true" width="60" height="60" />]
+[<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/login-page.jpg?raw=true" width="60" height="60" />]
+[<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/signup-page.jpg?raw=true" width="60" height="60" />]
+[<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-page.jpg?raw=true" width="60" height="60" />]
+[<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-edit-page.jpg?raw=true" width="60" height="60" />]
 
 
 #### Contributions
