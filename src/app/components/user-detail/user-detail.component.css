@@ -1,12 +1,126 @@
-
-.form-input {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color: rgb(0, 0, 0);
+.user-info{
+  font-family: "Josefin";
+  font-weight: bold !important;
+  text-align: center;
+  margin-left: auto;
 }
+
 
 .form-input:focus {
-    font-weight: bold !important;
-    color: #000000 !important;
+  font-family: "Josefin";
+  font-weight: bold !important;
+  color: #007e06 !important;
 }
+
+.h1 {
+
+  font-family: "Josefin";
+}
+
+.h2 {
+
+  font-family: "Josefin";
+}
+
+.ItemsCart {
+  font-family: "Josefin";
+  font-size: 20px;
+  margin-left: auto !important;
+}
+
+.form-input{
+  font-family: "Josefin";
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  font-size: 20px;
+  width: auto
+}
+
+.btn-primary {
+  margin-left: auto;
+  background-image: url('../../../assets/static/images/background long.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: .1em;
+  border-radius: 50px;
+  border-color: black;
+  border: 1px solid rgb(34, 34, 34); /* Adding a border */
+}
+
+.btn-delete {
+  margin-left: 1px;
+  background-image: url('../../../assets/static/images/background long.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: .1em;
+  border-radius: 50px;
+  border-color: black;
+  border: 1px solid rgb(34, 34, 34); /* Adding a border */
+}
+
+.btn-logout {
+  margin-left: 10px;
+  background-image: url('../../../assets/static/images/background long.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: .1em;
+  border-radius: 50px;
+  border-color: black;
+  border: 1px solid rgb(34, 34, 34); /* Adding a border */
+}
+
+.btn-save {
+  margin-left: auto;
+  background-image: url('../../../assets/static/images/background long.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: .1em;
+  border-radius: 50px;
+  border-color: black;
+  border: 1px solid rgb(34, 34, 34); /* Adding a border */
+}
+
+.btn-cancel {
+  margin-left: 5px;
+  background-image: url('../../../assets/static/images/background long.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: .1em;
+  border-radius: 50px;
+  border-color: black;
+  border: 1px solid rgb(34, 34, 34); /* Adding a border */
+}
+
+

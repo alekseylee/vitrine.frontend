@@ -46,7 +46,8 @@ export class RegisterComponent implements OnInit {
             this.error = "Passwords do not match"
             return
         }
-        
+
+    
         this.usersService.register(
             this.username, this.password, this.email, this.name, this.address, this.phone).subscribe((token : Token) => {
                 localStorage.setItem('token', token.token);

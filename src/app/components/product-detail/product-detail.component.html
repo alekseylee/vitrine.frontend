@@ -10,7 +10,7 @@
             class="col-6 rounded px-5 pt-5 pb-3" 
         >
             <h1>{{ product.name }}</h1>
-            <h5 class="my-4">Description</h5>
+            <h3 class="my-4">Description</h3>
             <p style="text-align: justify; font-size: 14px;">
                 {{ product.description }}
             </p>
@@ -21,9 +21,9 @@
                     *ngIf="!isProductInCart" 
                     class="btn btn-success" 
                     [disabled]="!user" 
-                    (click)="addToCart()"
-                >Add to cart</button>
-                <button *ngIf="isProductInCart" class="btn btn-secondary" disabled>In cart</button>
+                    (click)="addToCart()">Add to cart</button>
+                <button *ngIf="isProductInCart" class="btn btn-secondary" disabled>
+                    <i class="fas fa-shopping-cart" style="margin-right: 1rem; font-size: 1x;"></i>In cart</button>
             </div>
             
         </div>

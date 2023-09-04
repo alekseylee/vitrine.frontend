@@ -9,40 +9,28 @@ import { ProductsService } from 'src/app/services/products.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-priceString(_t12: Product): string|number {
-throw new Error('Method not implemented.');
-}
-    public term : string| undefined;
-    public products: Product[] =[];
-    public isProductInCart! : boolean;
+  priceString(_t12: Product): string | number {
+    throw new Error('Method not implemented.');
+  }
+  public term: string | undefined;
+  public products: Product[] = [];
+  public isProductInCart!: boolean;
 
-    constructor(router : Router, route : ActivatedRoute, private productsService : ProductsService) { 
-        this.term = route.snapshot.paramMap.get('term') || ""
-    }
+  constructor(router: Router, route: ActivatedRoute, private productsService: ProductsService) {
+    this.term = route.snapshot.paramMap.get('term') || ""
+  }
 
-    ngOnInit(): void {
-        this.productsService.getProducts().subscribe(
-          (products: Product[]) => {
-            this.products = products.map(product => ({
-              ...product,
-              imageUrl: product.image || "../../../assets/static/images/question_mark.png"
-            }));
-          },
-          (error: ErrorEvent) => {
-            console.error("Error fetching products:", error);
-          }
-        );
-
-    // ngOnInit(): void {
-    //     this.productsService.getProducts().subscribe((products : Product[]) => {
-    //         this.products = products
-
-    //         for (let product of this.products) {
-    //             product.imageUrl = product.image || "../../../assets/static/images/question_mark.png";
-                
-    //         }
-    //     }, (error: ErrorEvent) => {
-    //     })
-    // }
-}
+  ngOnInit(): void {
+    this.productsService.getProducts().subscribe(
+      (products: Product[]) => {
+        this.products = products.map(product => ({
+          ...product,
+          imageUrl: product.image || "../../../assets/static/images/question_mark.png"
+        }));
+      },
+      (error: ErrorEvent) => {
+        console.error("Error fetching products:", error);
+      }
+    );
+  }
 }

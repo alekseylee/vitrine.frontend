@@ -21,7 +21,7 @@
 }
 .product-price {
     
-    margin-left: auto !important; /* Adjust the margin to create spacing */
+    margin-left: 5% ; /* Adjust the margin to create spacing */
     font-weight: bold; /* Adding font weight */
     color: #000000; /* Adjust color as needed */
 }

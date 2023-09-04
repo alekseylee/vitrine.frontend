@@ -1,4 +1,6 @@
 .product-img-container {
+    margin-left: 5px;
+    margin-bottom: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,9 +10,36 @@
 }
 
 .btn-success {
-    margin-left: 100px;
-}
+    margin-left: auto;
+    background-image: url('../../../assets/static/images/background long.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: .1em;
+    border-radius: 50px;
+    border-color: black;
+    border: 1px solid rgb(34, 34, 34); /* Adding a border */
+  }
 
 .btn-secondary {
-    background-color: green;
+    margin-left: 5px;
+    background-color: rgb(50, 131, 168);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    letter-spacing: .1em;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 }
