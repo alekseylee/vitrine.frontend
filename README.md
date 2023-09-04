@@ -60,25 +60,25 @@ frontend: Contains the Angular frontend code.
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/home-page.jpg?raw=true" width="640" height="480" />
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/home-page.jpg?raw=true" width="auto" height="auto" />
       <p>Home Page</p>
     </td>
     <td align="center">
-      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/login-page.jpg?raw=true" width="640" height="480" />
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/login-page.jpg?raw=true" width="auto" height="auto" />
       <p>Login Page</p>
     </td>
     <td align="center">
-      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/signup-page.jpg?raw=true" width="640" height="480" />
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/signup-page.jpg?raw=true" width="auto" height="auto" />
       <p>Signup Page</p>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-page.jpg?raw=true" width="640" height="480" />
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-page.jpg?raw=true" width="auto" height="auto" />
       <p>Account Page</p>
     </td>
     <td align="center">
-      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-edit-page.jpg?raw=true" width="640" height="480" />
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-edit-page.jpg?raw=true" width="auto" height="auto" />
       <p>Account Edit Page</p>
     </td>
   </tr>
