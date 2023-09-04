@@ -57,13 +57,32 @@ backend: Contains the Spring Boot backend code.
 frontend: Contains the Angular frontend code.
 
 #### Project Mockup:
-<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/home-page.jpg?raw=true" width="320" height="240" />
-<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/login-page.jpg?raw=true" width="320" height="240" />
-<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/signup-page.jpg?raw=true" width="320" height="240" />
-<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-page.jpg?raw=true" width="320" height="240" />
-<img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-edit-page.jpg?raw=true" width="320" height="240" />
-
-| --- | --- | --- | --- |
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/home-page.jpg?raw=true" width="320" height="240" />
+      <p>Home Page</p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/login-page.jpg?raw=true" width="320" height="240" />
+      <p>Login Page</p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/signup-page.jpg?raw=true" width="320" height="240" />
+      <p>Signup Page</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-page.jpg?raw=true" width="320" height="240" />
+      <p>Account Page</p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/account-edit-page.jpg?raw=true" width="320" height="240" />
+      <p>Account Edit Page</p>
+    </td>
+  </tr>
+</table>
 
 
 #### Contributions
