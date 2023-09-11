@@ -24,7 +24,7 @@ Product Catalog: Display a list of products with details like title, price, and 
 
 Product Info: Display product information with details such as title, price and images, description,  and the option to add to cart.
 
-Product Search and Filtering: Users can search for products and apply filters to narrow down their search.
+Product Search and Filtering: Users can search for products and apply filters to narrow down their search. (not realized yet)
 
 Shopping Cart: Users can add products to their shopping cart, update quantities, and remove items.
 
