@@ -6,8 +6,9 @@ export class Product {
     addedOn: Date;
     imageUrl: string;
     image: string;
+    size: string;
 
-    constructor(id: Number, name: string, description: string, price: Number, addedOn: Date, imageUrl: string, image: string) {
+    constructor(id: Number, name: string, description: string, price: Number, addedOn: Date, imageUrl: string, image: string, size: string) {
        this.id = id;
        this.name = name;
        this.description = description;
@@ -15,5 +16,6 @@ export class Product {
        this.addedOn = addedOn;
        this.imageUrl = imageUrl;
        this.image = image;
+       this.size = size;
     }
 }

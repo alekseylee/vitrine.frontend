@@ -1,0 +1,38 @@
+table {
+    margin-top: none;
+    margin-bottom: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid rgba(5, 0, 0, 0.133);
+    text-align: center;
+}
+
+th {
+    background-color: rgba(5, 0, 0, 0.133);
+    color: rgb(0, 0, 0);
+}
+
+td:nth-child(2),
+td:nth-child(4),
+td:nth-child(5) {
+    color: rgb(0, 81, 255);
+}
+
+td:nth-child(3) {
+    margin-left: auto;
+    margin-top: auto;
+    color: rgb(0, 81, 255);
+}
+
+.cart-total {
+    font-weight: bold;
+    color: #000000;
+}
+
+.checkout-button {
+    text-align: center;
+}

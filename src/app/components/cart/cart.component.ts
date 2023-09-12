@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faCaretUp, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { CartItem } from 'src/app/models/CartItem';
+import { Product } from 'src/app/models/Product';
 import { User } from 'src/app/models/User';
 import { CartItemsService } from 'src/app/services/cart-items.service';
 import { UsersService } from 'src/app/services/users.service';
@@ -18,12 +19,16 @@ export class CartComponent implements OnInit {
 
     user : User | any
     cartItems: CartItem[] = [];
+    searchQuery: string = '';
+    filteredItems: any[] = [];
 
     constructor(
         private router : Router, 
         private usersService : UsersService,
         private cartItemsService : CartItemsService
-    ) { }
+    ) {
+        this.filteredItems = this.cartItems;
+     }
 
     ngOnInit(): void {
         if (!localStorage.getItem('token')) {
@@ -72,4 +77,17 @@ export class CartComponent implements OnInit {
             })
         }
     }
+
+    onSearch() {
+        if (this.searchQuery) {
+          // Use the Array filter method to filter items
+          this.filteredItems = this.cartItems.filter(item => {
+            // Replace 'item.name' with the property you want to search in
+            return Product.name.toLowerCase().includes(this.searchQuery.toLowerCase());
+          });
+        } else {
+          // If the search query is empty, show all items
+          this.filteredItems = this.cartItems;
+        }
+}
 }
