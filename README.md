@@ -24,7 +24,7 @@ Product Catalog: Display a list of products with details like title, price, and 
 
 Product Info: Display product information with details such as title, price and images, description,  and the option to add to cart.
 
-Product Search and Filtering: Users can search for products and apply filters to narrow down their search.
+Product Search and Filtering: Users can search for products and apply filters to narrow down their search. (not realized yet)
 
 Shopping Cart: Users can add products to their shopping cart, update quantities, and remove items.
 
@@ -51,6 +51,11 @@ Configure the API endpoint in the environment.ts file.
 Run the Angular development server: ###ng serve or ###ng s --o.
 
 #### Project Structure:
+
+  <div align="center">
+      <img src="https://github.com/alekseylee/vitrine.frontend/blob/main/src/assets/static/mockup/project UML.png?raw=true" width="auto" height="auto" />
+      <p>UML of project</p>
+    </div>
 
 backend: Contains the Spring Boot backend code.
 
